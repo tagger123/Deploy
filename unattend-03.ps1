@@ -37,7 +37,7 @@ Set-LocalUser -Name 'help' -PasswordNeverExpires $true
 # ══════════════════════════════════════════════════════════════════════════════
 Write-Log 'Konfiguracja zarządzania energią...'
 
-powercfg.exe /hibernate off          # wyłącz hibernację
+powercfg.exe /hibernate off                 # wyłącz hibernację
 powercfg.exe /change monitor-timeout-ac 0   # wygaszacz: nigdy (zasilanie AC)
 powercfg.exe /change monitor-timeout-dc 0   # wygaszacz: nigdy (bateria)
 powercfg.exe /change standby-timeout-ac 0   # uśpienie: nigdy (AC)
